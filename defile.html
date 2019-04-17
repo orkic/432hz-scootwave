@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta content="text/html; charset=UTF-8" http-equiv="content-type">
+<style type="text/css">
+body {
+  width: 100%;
+  height: 100%;
+  background: #000;
+  overflow: hidden;
+}
+
+.fade {
+  position: relative;
+  width: 100%;
+  min-height: 60vh;
+  top: -25px;
+  background-image: linear-gradient(0deg, transparent, black 75%);
+  z-index: 1;
+}
+
+.star-wars {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  height: 600px;
+  color: #feda4a;
+  font-family: 'Pathway Gothic One', sans-serif;
+  font-size: 300%;
+  font-weight: 600;
+  letter-spacing: 6px;
+  line-height: 120%;
+  perspective: 400px;
+  text-align: justify;
+}
+
+.crawl {
+  position: relative;
+  top: 9999px;
+  transform-origin: 50% 100%;
+  animation: crawl 110s linear;
+}
+
+.crawl > .title {
+  font-size: 90%;
+  text-align: center;
+}
+
+.crawl > .title h1 {
+  margin: 0 0 100px;
+  text-transform: uppercase;
+}
+
+@keyframes crawl {
+  0% {
+    top: 0;
+    transform: rotateX(20deg)  translateZ(0);
+  }
+  100% { 
+    top: -6000px;
+    transform: rotateX(25deg) translateZ(-2500px);
+  }
+}
+</style>
+</head>
+<body>
+<section class="star-wars">
+<div class="crawl">
+<div class="title">
+<p>Deambular...</p>
+<h1>Para qué ?</h1>
+</div>
+<p>Deambular, andar sin dirreción determinada nos dice el diccionario de la lengua española de la Real Academia Española. Un diccionario de etimología precisa que la palabra viene de Ambulare que significa andar y vagar por un lado y otro.<br>En el mismo diccionario de etimología, leemos que vagabundo viene de vago, que expressa la idea de errante, que anda de un lugar a otro.<br>En psicología se denomina poriomanía el impulso patológico de algunas personas a salir voluntariamente de su hogar y a vagar lejos de él.</p>     
+<p>La cuerda está floja entre el paseante, el "parásito" y el trastornado.</p>
+<p>De hecho, en una sociedad sedentaria, el que está afuera es algo sospechoso. Dónde se puede controlar a uno sin motivo sino por el hecho de estar afuera ? En las calles. Puede deber justificar su identidad, decir de donde viene, a donde va, el porque, ser sometido a una palpación por fín de determinar si porta algo prohibido...</p>
+<p>Afuera uno está en la mira, de la multitud, de la policia, de las cámaras de vigilancia y más ampliamente, de todo tipo de vigilancia ; estar afuera no es algo anodino, benigno.</p>
+<p>Así, para qué deambular ?</p>
+<p>Al no tener un destino preciso, el que deambula tiene la mente abierta a sensaciones, emociones, pensamientos flotando fuera del trivial de lo cotidiano.</p>
+<p>La mente se vuelve un lienzo dónde se "dibujan" toques de ideas, de reflexiones, de proyectos ¡Un mundo puede nacer de una deambulación !</p>
+<p><span style="color: red;">|</span>Finalmente, todo está fuera, todo, incluido nosotros mismos: afuera, en el mundo, entre los otros. No es en una especie de retiro donde nos encontraremos: es en el camino, en la ciudad, en medio de la multitud, cosa entre las cosas, hombre entre los hombres.<span style="color: red;">|</span><br><center>J.P. Sartre</center></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</div>
+</section>
+</body>
+</html>
