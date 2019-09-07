@@ -39,6 +39,15 @@ text-decoration: none; color: blue;
 span.clr {
 background: black; color: white; font-weight: 700;
 }
+span.clrbis {
+background: blue; color: white; font-weight: 700;
+}
+div.clrbis {
+background: blue; color: white; font-weight: 700; text-align: center; padding: 2px;
+}
+div.basica {
+background: black; color: #00ff00; text-align: center; padding: .3em;
+}
 a.footer {
 text-decoration: none; color: white;
 }
@@ -95,28 +104,31 @@ function md5_login()
 <td class="un"><img alt="image" style="float: left; margin-right: 1em;" src="trotpix.png"><p>
 <p style="text-align: center; font-weight: 700; letter-spacing: .3em;"><span class="scootred">SCOOTPLOITATION</span> : <abbr title="persona sin propósito específico, que se mueve despacio">Meanderthal</abbr> en monopatín</p>
 <p>En esta página les mostramos como se presentan la mayoria de las páginas de este sitio y lo que se puede encontrar.</p>
+<div class="basica">Básicamente : son relatos de paseos ; ornamentados con fotos y vídeos ; estimulados con preguntas y enigmas para resolver y seguir avanzando...</div>
 <p>Nuestra realidad es el universo donde se desarolla este sitio.</p>
 <p>Reminiciencias, recuerdos, analogias, presciencia, les permiran resolver unas de las enigmas que encontraran en este sitio y les permitiran avanzar.</p>
 <p style="clear: left;">&nbsp;</p>
-<p >Ven que hay textos con enlaces <span class="clr">[tomar foto]</span>, o <span class="clr">[ver foto]</span> : la foto corresponde al texto que precede el enlace y aparece en el visor más abajo ; pasa lo mismo con los enlaces <span class="clr">[grabar vídeo]</span>.</p>
+<p >Ven que hay textos con enlaces <span class="clr">[ver texto]</span>, o <span class="clr">[ver foto]</span> : el texto o la foto corresponde al texto que precede el enlace y aparecen en el visor más abajo ; pasa lo mismo con los enlaces <span class="clr">[ver vídeo]</span>.</p>
 <p>En la parte inferior de la página, ven una pregunta ; responder correctamente permite ir a la siguiente página ; para responder, click la pregunta. Se abre una ventanilla donde escribir la respuesta, click Aceptar y si la respuesta es correcta se abre la página siguiente !</p>
 <p style="text-align: center; font-size: 300%; font-weight: 900; color: red;">&darr; &darr; &darr; &darr; &darr;</p>
-<p style="font-weight: 700;">Texto de fantasia para nuestra demonstración. Cuando click "ver texto" o "tomar foto" este aparece en el visor más abajo (<i>tiene que <span style="color: red;">hacer scroll</span> = deslizar verticalmente</i>). Cuando "graban un vídeo" este aparece en el visor de vídeos (<i>hacer scroll</i>).</p>
+<p style="text-align: center; font-size: 200%; font-weight: 900; color: #ff00ff;">/D E M O ==</p>
+<p style="font-weight: 700;"> de fantasia para nuestra demonstración. Cuando click "ver texto" o "ver foto" este o esta aparece en el visor más abajo (<i>tiene que <span style="color: red;">hacer scroll</span> = deslizar verticalmente</i>). Cuando es "ver un vídeo" este aparece en el visor de vídeos (<i>hacer scroll</i>).</p>
 <center><table class="deux"><tr><td class="deux">
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit <a class="footer" href="prologo.html" target="framefoto">[ver texto]</a>,Phasellus cursus odio eros, in rhoncus lorem suscipit eget. Proin tristique arcu in congue rhoncus. Praesent elementum gravida lectus in porta. Aliquam viverra feugiat tristique.<br>Aenean sed massa quis justo efficitur ornare sit amet nec sapien <a class="footer" href="corcel.html" target="framefoto">[ver texto]</a>,  Vestibulum sed erat feugiat, iaculis felis eget, dignissim dolor. In hac habitasse platea dictumst. Phasellus turpis nunc, gravida id diam vitae, egestas cursus tellus ; Duis metus diam, rhoncus at velit vel, pharetra tincidunt lacus <a class="footer" id="foto1" href="bogo3.jpg" target="framefoto">[tomar foto]</a>.</p><p><span style="color: #00ffff;">Cras feugiat risus tincidunt dui vehicula commodo. Maecenas sem quam, euismod non nisi in, semper pellentesque sem. Fusce lacinia lacus ac eros volutpat pulvinar. Ut vel luctus tortor, ut mollis nisl. Nam facilisis suscipit dapibus. Nulla convallis nisi eget placerat aliquam. Etiam rutrum orci non odio malesuada mattis. Praesent tincidunt viverra turpis, <a class="footer" href="bogo2.jpg" target="framefoto">[tomar foto]</a> suscipiantur an nec.</span></p><p><span style="color: #ffff00;">Mauris turpis tortor, imperdiet eu rutrum id, pharetra in dui. Suspendisse potenti. In ut elit ac nibh suscipit eleifend vitae eget tellus. Nullam mattis orci eget sodales placerat. Aliquam molestie bibendum leo eget volutpat. Aliquam non massa id leo feugiat lobortis. Vivamus accumsan ex a egestas dictum. Nunc iaculis neque quis magna suscipit, <a class="footer" href="bogo.jpg" target="framefoto">[tomar foto]</a> ac volutpat leo pharetra <a class="footer" href="https://www.youtube.com/embed/IWFiKp5dyJ4" target="framevideo">[grabar vídeo]</a></span>.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit <a id="ancre1" class="footer" href="prologo.html" target="framefoto">[ver texto 1]</a>,Phasellus cursus odio eros, in rhoncus lorem suscipit eget. Proin tristique arcu in congue rhoncus. Praesent elementum gravida lectus in porta. Aliquam viverra feugiat tristique.</p><p>Aenean sed massa quis justo efficitur ornare sit amet nec sapien <a id="ancre2" class="footer" href="corcel.html" target="framefoto">[ver texto 2]</a>,  Vestibulum sed erat feugiat, iaculis felis eget, dignissim dolor. In hac habitasse platea dictumst. Phasellus turpis nunc, gravida id diam vitae, egestas cursus tellus ; Duis metus diam, rhoncus at velit vel, pharetra tincidunt lacus <a id="fot1" class="footer" href="bogo13.jpg" target="framefoto">[ver foto 1]</a>.</p><p><span style="color: #00ffff;">Cras feugiat risus tincidunt dui vehicula commodo. Maecenas sem quam, euismod non nisi in, semper pellentesque sem. Fusce lacinia lacus ac eros volutpat pulvinar. Ut vel luctus tortor, ut mollis nisl. Nam facilisis suscipit dapibus. Nulla convallis nisi eget placerat aliquam. Etiam rutrum orci non odio malesuada mattis. Praesent tincidunt viverra turpis, <a id="fot2" class="footer" href="bogo12.jpg" target="framefoto">[ver foto 2]</a> suscipiantur an nec.</span></p><p><span style="color: #ffff00;">Mauris turpis tortor, imperdiet eu rutrum id, pharetra in dui. Suspendisse potenti. In ut elit ac nibh suscipit eleifend vitae eget tellus. Nullam mattis orci eget sodales placerat. Aliquam molestie bibendum leo eget volutpat. Aliquam non massa id leo feugiat lobortis. Vivamus accumsan ex a egestas dictum. Nunc iaculis neque quis magna suscipit, <a id="fot3" class="footer" href="bogo1.jpg" target="framefoto">[ver foto 3]</a> ac volutpat leo pharetra <a id="vid1" class="footer" href="https://www.youtube.com/embed/IWFiKp5dyJ4" target="framevideo">[ver vídeo vid 1]</a></span>.</p>
 </td></tr></table></center>
 <p>&nbsp;</p>
-<center><a href="#foto1">Volver al texto</a><br><img alt="image" border="0" src="peli2.png"><br><b>Visor de fotos</b><br><iframe name="framefoto" width="700" height="700" style="border: solid black 1px;" src="cadre.gif"></iframe></center>
+<center><span class="clrbis">Volver a la lectura</span><sup>&#60;<a style="font-weight: 900;" href="#ancre1">texto1</a>&#62;</sup><sup>&#60;<a style="font-weight: 900;" href="#ancre2">texto2</a>&#62;</sup><sup>&#60;<a style="font-weight: 900;" href="#fot1">foto1</a>&#62;</sup><sup>&#60;<a style="font-weight: 900;" href="#fot2">foto2</a>&#62;</sup><sup>&#60;<a style="font-weight: 900;" href="#fot3">foto3</a>&#62;</sup><br><img alt="image" border="0" src="peli2.png"><br><b>Visor de fotos</b><br><iframe name="framefoto" width="640" height="480" style="border: solid black 1px;" src="cadre2.gif"></iframe></center>
 <p>&nbsp;</p>
-<center><a href="#foto1">Volver al texto</a><br><img alt="image" border="0" src="s82.png"><br><b>Visor de vídeos</b><br><iframe name="framevideo" width="640" height="480" style="border: solid black 1px;" src="video.gif"></iframe></center>
+<center><span class="clrbis">Volver a la lectura</span><sup>&#60;<a style="font-weight: 900;" href="#vid1">vid 1</a>&#62;</sup><br><img alt="image" border="0" src="s82.png"><br><b>Visor de vídeos</b><br><iframe name="framevideo" width="640" height="480" style="border: solid black 1px; " src="video.gif"></iframe></center>
 <p>&nbsp;</p>
 <center><img alt="image" src="doigt.jpg"></center>
 <p style="text-align: center;"><b>Para ir a la siguiente página</b>, responda a la pregunta (<i>Click la pregunta para poder responder</i>) :</p><p><a href="#" onClick="md5_login();return false;">Cual es la capital de Colombia ?</a> (seis letras, utilize solo minúsculas, no utilize acento)</p>
-<p style="font-weight: 900;">Si no sabe la respuesta, utilize los indicadores siguientes :</p>
+<p style="font-weight: 900;">Si no conoce la respuesta, vea los indicadores siguientes :</p>
 <ul>
-  <li><a href="indicador.html" rel="ajaxpanel" data-loadtype="iframe">Una pista</a></li>
-<li><a href="https://es.wikipedia.org/wiki/Colombia" rel="ajaxpanel">Wikipedia</a> (<i>paciencia, puede necesitar unos segunditos para aparecer.</i>)</li>
+<li><a href="indicador.html" rel="ajaxpanel" data-loadtype="iframe">Una pista</a></li>
+<li><a href="https://es.wikipedia.org/wiki/Colombia" rel="ajaxpanel">Wikipedia</a> (<i>a veces se puede necesitar unos segundos para que se muestre el contenido</i>)</li>
 </ul>
+<p style="text-align: center; font-size: 200%; font-weight: 900; color: #ff00ff;">/D E M O /C L O S E  ==</p>
 <p>&nbsp;</p>
 <p style="text-align: center;"><a href="javascript:ts('body',1)">+ Ampliar Letras</a> | <a
 href="javascript:ts('body',-1)">- Disminuir Letras</a></p>
@@ -124,7 +136,7 @@ href="javascript:ts('body',-1)">- Disminuir Letras</a></p>
 <p style="text-align: center;"><a title="No olviden echar un ojito a nuestro Blog !" href="https://orkic.github.io/inmerweb-studio/blog.html" target="_blank"><img alt="image" border="0" src="logblog.gif"></a></p>
 <p>&nbsp;</td></tr></table></center>
 <br>
-<center><div style="width: 955px; border: solid white 1px; text-align: center; color: white; padding: 2px;"><a class="footer" title="Página de inicio" href="index.html">Home</a> - <a class="footer" title="Contexto de Scootploitation" href="concepto.html">Concepto</a> - <a class="footer" title="a Propósito de Scootploitation" href="aboutscootploitation.html">a Propósito</a> - Funciones - <a class="footer" title="Blog, cosas y otras" href="https://orkic.github.io/inmerweb-studio/blog.html">Blog</a> - <a class="footer" title="Formulario de contacto" href="https://patinette.wufoo.com/forms/scootaploitation-formulario-de-contacto/" target="_blank">Contact</a></div></center>
+<center><div class="clrbis" style="width: 955px;"><a class="footer" title="Página de inicio" href="index.html">Home</a> - <a class="footer" title="Contexto de Scootploitation" href="concepto.html">Concepto</a> - <a class="footer" title="a Propósito de Scootploitation" href="aboutscootploitation.html">a Propósito</a> - Funciones - <a class="footer" title="Blog, cosas y otras" href="https://orkic.github.io/inmerweb-studio/blog.html">Blog</a> - <a class="footer" title="Formulario de contacto" href="https://patinette.wufoo.com/forms/scootaploitation-formulario-de-contacto/" target="_blank">Contact</a></div></center>
 <p>&nbsp;</p>
 <div style="text-align: center; color: ffffff; font-size: smaller;">(Icons (pelicula foto y camara video) made by <a class="icon" href="https://www.flaticon.es/creaticca-creative-agency" title="Creaticca Creative Agency">Creaticca Creative Agency</a> from <a class="icon" href="https://www.flaticon.es/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" class="icon" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>)</div>
 <p>&nbsp;</p>
