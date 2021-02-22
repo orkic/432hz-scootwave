@@ -25,6 +25,27 @@ text-decoration: none; color: white;}
 iframe {display: block; margin-left: auto; margin-right: auto;}
 img {border: 0px;}
 </style>
+<script src="md5.js"></script>
+<script>
+function md5_login()
+{
+    var password = prompt( "Escriba su respuesta", "" );
+    // si un mot de passe a été entré
+    if ( password != null )
+    {
+    	// on le compare à celui attendu
+    	if ( hex_md5( password ) == "475266560c6d9f03f9ec80340218fa4c" )
+    	{
+    	    // mot de passe valide, on ouvre la page secrète
+    	    document.location.href = password + ".html";
+        }
+        else
+        {
+            alert( "Réponse inexacte!", "Erreur" );
+        }
+    }
+}
+</script>
 <script src='jquery.min.js'></script>
 <link rel="stylesheet" type="text/css" href="ddajaxsidepanel.css">
 <script src="ddajaxsidepanel.js">
