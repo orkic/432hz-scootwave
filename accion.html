@@ -17,14 +17,19 @@ code {font-family: arial; font-size: 0.779em; letter-spacing: 0.08em; line-heigh
 div.un {margin-left: auto; margin-right: auto; width: 1100px; vertical-align: top; border: solid 2px #bbbbbb; background-color: #ffffff; padding-top: 8px; padding-right: 4px; padding-left: 4px; padding-bottom: 4px; text-align: left;}
 div.deux {margin-left: auto; margin-right: auto; width: 96%; background-color: black; color: #00ff00; line-height: 1.2em; border: solid black 1px; border-radius: 15px; font-size: 1em; padding-left: .7em; padding-right: .4em; text-align: left;}
 div.leath {margin-left: auto; margin-right: auto; width: 80%; height: 330px; border: solid black 1px; padding: 10px; border-radius: 15px; background-color: white; text-align: left; font-family: verdana; font-size: 0.86em;}
-div.dial {margin-left: auto; margin-right: auto; width: 83%; border: solid black 1px; padding: 10px; border-radius: 15px; background-color: white; color: black; text-align: left; font-family: verdana; font-size: 0.86em;}
+div.dial {margin-left: auto; margin-right: auto; width: 83%; border: solid black 1px; padding: 10px; border-radius: 15px 15px 0px 0px; background-color: white; color: black; text-align: left; font-family: verdana; font-size: 0.86em;}
 span.clr {background: black; color: white;}
 div.basica {background-color: black; font-weight: 900; color: #ffffff; text-align: center; padding: .5em;}
 span.clrbis {background: blue; color: white; font-weight: 700;}
 a.liant {background: white; font-family: courier; font-size: 1em; font-style: italic; color: blue; text-decoration: underline;}
 a.footer {text-decoration: none; color: white; font-weight: 900;}
-.digres {color: red; font-weight: 900;}
+.digres {color: red; font-weight: 900; text-decoration: none;}
 iframe {display: block; margin-left: auto; margin-right: auto;}
+table {margin-left: auto; margin-right: auto; border-colapse: colapse;}
+td {vertical-align: top; padding-left: 20px; padding-right: 20px;}
+hr {height: 2px; background-color: grey; border: none;}
+hr.bis {height: 2px; background-color: red; border: none;}
+mark {background-color: yellow; color: black;}
 </style>
 <style>
 .twAudessus {
@@ -56,6 +61,23 @@ iframe {display: block; margin-left: auto; margin-right: auto;}
 /* Slecteur « target pour afficher l’image » */
 .twAudessus:target { display: table; }
 </style>
+<script>
+<!--
+/****************************************************
+     Author: Eric King
+     Url: http://redrival.com/eak/index.shtml
+     This script is free to use as long as this info is left in
+     Featured on Dynamic Drive script library (http://www.dynamicdrive.com)
+****************************************************/
+var win=null;
+function NewWindow(mypage,myname,w,h,scroll,pos){
+if(pos=="random"){LeftPosition=(screen.width)?Math.floor(Math.random()*(screen.width-w)):100;TopPosition=(screen.height)?Math.floor(Math.random()*((screen.height-h)-75)):100;}
+if(pos=="center"){LeftPosition=(screen.width)?(screen.width-w)/2:100;TopPosition=(screen.height)?(screen.height-h)/2:100;}
+else if((pos!="center" && pos!="random") || pos==null){LeftPosition=0;TopPosition=20}
+settings='width='+w+',height='+h+',top='+TopPosition+',left='+LeftPosition+',scrollbars='+scroll+',location=no,directories=no,status=no,menubar=no,toolbar=no,resizable=no';
+win=window.open(mypage,myname,settings);}
+// -->
+</script>
 <script src="md5.js"></script>
 <script>
 function md5_login()
@@ -88,6 +110,17 @@ function md5_login()
 ***********************************************\
 
 </script>
+<script type="text/javascript">
+          function playSound(el,soundfile) {
+              if (el.mp3) {
+                  if(el.mp3.paused) el.mp3.play();
+                  else el.mp3.pause();
+              } else {
+                  el.mp3 = new Audio(soundfile);
+                  el.mp3.play();
+              }
+          }
+      </script>
 </head>
 <body>
 <p>&nbsp;</p>
@@ -113,9 +146,14 @@ function md5_login()
 <div class="leath"><a id="fot1" href="leatherman.jpg" target="framefoto"><img alt="image" style="float: left; margin-right: 10px; margin-bottom: 5px; border: 0px;" src="leatherman2.jpg" title="Click y luego Scroll para ver otra foto"></a><i>Photo : the leatherman</i><p>El leatherman (el hombre de cuero), un vagabundo legendario, cuya identidad sigue siendo desconocida, que circuló incesantemente entre 1850 y 1889 por el norte de Nueva Inglaterra y el estado de Nueva York.</p><p>Vestido con un mono y una chaqueta hecha de trozos de cuero cosidos de forma tosca, como su sombrero y su bolso, le apodaban El Hombre de Cuero. En los pueblos por los que pasaba pedía comida y también aceptaba tabaco, que fumaba en pipas que él mismo fabricaba. Durmia en refugios rocosos a lo largo del camino</p><p>A partir de 1883 fijó su ruta en un único itinerario de unos 400 kilómetros, que repitia incansablemente en 34 días.</p><p>La prensa se interesó por esta extraña personalidad y varios artículos en diversos periódicos evocaron su historia.</p><p>Eterno caminante, vagabundo, alienado... La línea parece borrosa, su mundo consistía en vagar y este hecho le hizo famoso.</p><p>En el fondo, el siguió su <a title="Los caminos del deseo" href="https://es.wikipedia.org/wiki/Camino_del_deseo" target="_blank">camino del deseo</a>.</p></div>
 <!-- FIN DIV LEATH -->
 <p>&nbsp;</p>
+<!-- TABLE -->
+<table rules="cols" style="width: 600px; border-left: solid black 1px;"><caption style="font-weight: 900;"><hr><span style="font-family: georgia; color: red;">HINT & STREET</span> by Psychotextnic Studio<br><hr>&nbsp;</caption><tr><td style="width: 200px; text-align: center;"><hr class="bis"><b>INFOS</b><hr class="bis"><b>QUE ES ?</b><br>Un tipo de simulador de deambulación<hr><b>PRECIO</b><br>Es gratis<hr><b>DESAROLLO</b><br>Psychotextnic Studio<hr><b>EDITOR</b><br>432hz ScootWave<hr><b>PLATAFORMA</b><br>Navegador web<hr><b>MULTIJUGADOR</b><br>No</td><td style="padding-top: 4px; text-align: left;">Nathalie Sarraute, escritora del movimiento literario Nouveau Roman (Nueva Novela) dijo que para no ser un mero vehículo, para acceder a la calidad del material poético, el lenguaje debe cumplir dos condiciones:
+<ul><li><i>Debe perder su banalidad, hay que trabajarlo.</li>
+<li>Debe expresar una sensación, no informar, sino hacer que el lector experimente un cierto orden de sensación.</i></li></ul>Un texto no debe ser banal, debe dar vida para acceder a otro nivel que la simple descripción.<img style="float: right; margin-left: 5px;" alt="image" src="vino.gif">La escritura tal como la escultura. Es lo que hemos intentado lograr en este desconcertante viaje.<br>&nbsp;<br><div style="text-align: center;">BE SEEING YOU</div></td></tr><tr><td colspan=2 style="font-family: arial; font-weight: 900; color: #ff5e00;"><br><div style="text-align: center;">POR LAS TROCHAS URBANAS</div><br><div style="text-align: left; margin-left: 50px;">Starring :</div><div style="text-align: center;">THE SCOOTERED MAN<br>THE NARRATOR<br>THE WEBMASTER</div></td></tr></table>
+<!-- FIN TABLE -->
 <p>&nbsp;</p>
 <div class="deux"><p style="text-align: center; color: white;">PERSIGUIENDO EL CONCEPTO.</p>
-<p>Al final de este <span style="font-style: italic; color: red;">Hint & Street 1</span> esperamos haber logrado cumplir nuestro concepto mencionado en las páginas anteriores, un éxito que allanaría el camino para <span style="font-style: italic;">Hint & Street 2</span> et siguientes...</p></div>
+<p>Al final de este <span style="font-style: italic; color: red;">Hint & Street 1</span> esperamos haber logrado cumplir nuestro concepto mencionado en las páginas anteriores, un éxito que allanaría el camino para <span style="font-style: italic;">Hint & Street 2</span> y siguientes...</p></div>
 <p>&nbsp;</p>
 <div class="deux">
 <figure style="text-align: center;"><a href="#id84"><img alt="image" src="reifith.jpg" style="border: 0px;"></a><div class="twAudessus" id="id84"><a title="Description" href="#ferme">
@@ -128,7 +166,7 @@ function md5_login()
 <img style="float: left; margin: 8px;" alt="image" src="lab2.png"><p style="color: white; font-variant: small-caps;">En la dehesa (In The Green), o, una ordinaria aventura de un monopatinador en un entorno urbano, por Fulano senior, el bardo de las calles, el Mungo Park de las aceras.</p>
 <!-- SOUND CLOUND https://files.catbox.moe/5kl4v2.mp3 -->
 <p style="text-align: center;">Wandering<br><audio controls="controls" preload="none">
-<source src="https://files.catbox.moe/5kl4v2.mp3" type="audio/mpeg">
+<source src="pwalking.mp3" type="audio/mpeg">
 Your browser does not support the audio tag.
 </audio>
 </p>
@@ -136,23 +174,23 @@ Your browser does not support the audio tag.
 <p>Los escépticos, los burlones, los hombres superficiales que juzgan todo sin saber, llamarán infantilismo al scooterismo.</p>
 <p>Están equivocados; lo demostraremos aquí.</p>
 <p>Con espíritu de <a class="whit" title="Mungo Park, en Wikipedia" href="https://es.wikipedia.org/wiki/Mungo_Park" target="_blank">Mungo Park</a>, de <a class="whit" title="René Caillié, en Wikipedia" href="https://es.wikipedia.org/wiki/Ren%C3%A9_Cailli%C3%A9" target="_blank">René Caillié</a>, &ndash; Oh ! Manes, inspírenme! - e impregnado de las fallas de mi idiosincrasia, con esta primera obra de <b>Hint & Streets</b> nos embarcamos en un paseo campestre en un entorno urbano, un sueño pastoral restituido por el paseo en scooter, como la <a class="whit" title="Por el camino de Swann" href="https://es.wikipedia.org/wiki/Por_el_camino_de_Swann" target="_blank">época de Combray fue restituida por el sabor de una taza de té</a>.</p>
-<p>El viento de los grandes horizontes sopla y me empuja hacia el follaje metropolitano. Ánimo ! <span style="background: white; color: black;"><i>&laquo; A las cinco (no se puede comenzar de otro modo, definitivamente) abandonamos los lechos &raquo;</i> <a title="lien vers Wikipedia ; ouvre dans une nouvelle fenêtre" href="https://es.wikipedia.org/wiki/Fernando_Gonz%C3%A1lez_Ochoa" target="_blank">Fernando González</a></span> <a id="fot2" class="footer" href="tarta.jpg" target="framefoto">[ver foto 2]</a></p>
-<p><span style="background: white; color: black;"><i>&laquo; Y, sin embargo, aunque me preocupan los días venideros, una fuerza poderosa me empuja hacia adelante, no puedo resistirle. &raquo;</i> <a title="lien vers Wikipedia ; ouvre dans une nouvelle fenêtre" href="https://es.wikipedia.org/wiki/Kazimierz_Nowak" target="_blank">Kazimierz Nowak</a></span> <a id="fot3" class="footer" href="kazino.jpg" target="framefoto">[ver foto 3]</a></p>
+<p>El viento de los grandes horizontes sopla y me empuja hacia el follaje metropolitano. Ánimo ! <span style="background: white; color: black;"><i>&laquo; A las cinco (no se puede comenzar de otro modo, definitivamente) abandonamos los lechos &raquo;</i> <a title="lien vers Wikipedia ; ouvre dans une nouvelle fenêtre" href="https://es.wikipedia.org/wiki/Fernando_Gonz%C3%A1lez_Ochoa" target="_blank">Fernando González</a></span> <a id="fot2" class="footer" href="tarta.jpg" target="framefoto">[ver foto 2]</a> <a class="digres" href="#voirim">&#x21E9;</a></p>
+<p><span style="background: white; color: black;"><i>&laquo; Y, sin embargo, aunque me preocupan los días venideros, una fuerza poderosa me empuja hacia adelante, no puedo resistirle. &raquo;</i> <a title="lien vers Wikipedia ; ouvre dans une nouvelle fenêtre" href="https://es.wikipedia.org/wiki/Kazimierz_Nowak" target="_blank">Kazimierz Nowak</a></span> <a id="fot3" class="footer" href="kazino.jpg" target="framefoto">[ver foto 3]</a> <a class="digres" href="#voirim">&#x21E9;</a></p>
 <!-- DEBUT TEXTE -->
-<p><span style="float: left; width: 0.7em; font-size: 400%; line-height: 80%;">E</span>ntremos en la intimidad del monopatinador.<p>
-<p><img style="float: left; margin-right: 5px;" alt="image" title="magdalena" src="madln.jpg">La tetera está sobre la mesa. Así como un plato con magdalenas, cada una envuelta en celofán sellado, proveniendo de la caja con la inscripción "Magdalenas de Commercy".<img style="float: right; margin-left: 5px;" alt="image" title="Vista de Delft" src="delft.jpg"><br>Pequeño pastelito, exquisito de sabor y de contorno, similar a un seno apenas núbil.</p>
-<p>Un buen olor a té caliente proviene de la tetera que hay sobre la mesa; se esparce en la habitación, luego atraviesa la abertura de la puerta, perdura a lo largo del pequeño panel naranja de la pared &ndash; donde esta colgada una reproducción del famoso cuadro Vista de Delft &ndash; del pasillo y se extiende al resto del apartamento.</p>
-<p>Aquí está nuestro protagonista, cómodamente tendido frente al televisor, ojeando monumentos desconocidos de la literatura francesa: <img style="float: left; margin-top: 3px; margin-right: 5px;" alt="image" title="novela : Todos los Caballos del Rey" src="tcrmb.jpg"><i>Tous les Chevaux du Roi</i> (Todos los caballos del rey) y <i>La Nuit</i> (La Noche), de <a class="whit" title="Michèle Bernstein, en Wikipedia" href="https://es.wikipedia.org/wiki/Mich%C3%A8le_Bernstein" target="_blank">Michèle Bernstein</a>, una de las figuras y miembro fundadora de la extinta organización: Internacional Situacionista, cuyo líder era <a class="whit" title="Guy Debord, en Wikipedia" href="https://es.wikipedia.org/wiki/Guy_Debord" target="_blank">Guy Debord</a>, escritor y teórico francés (que reflexionó sobre la reificación).<img style="float: right; margin-top: 3px; margin-left: 5px;" alt="image" title="novela : La Nuit (La Noche)" src="lnmb.jpg"></p>
-<p>En la mesita de noche de madera gruesa y de tono claro, otra novela, Le Voyeur (El Mirón), de <a class="whit" title="Alain Robbe-Grillet, en Wikipedia" href="https://es.wikipedia.org/wiki/Alain_Robbe-Grillet" target="_blank">Alain Robbe-Grillet</a> <a id="vid1" class="footer" href="https://www.youtube.com/embed/UlhYNwQjfAs" target="framevideo">[ver vídeo 1]</a>, escritor y cineasta francés, líder del Nouveau Roman (la "Nueva Novela").<img style="float: right; margin-top: 3px; margin-left: 5px;" alt="image" title="novela : Le Voyeur (El Mirón)" src="lvarg.jpg">Sobre esa misma mesita hay un plato pequeño con dos mitades de melocotones una al lado de la otra, dos nalgitas de color amarillo anaranjado, redondas, carnosas, aterciopeladas, reminiscencia de la adolescente de la magdalena.</p>
-<p>La luz que entra en la habitación es filtrada por un estor enrollable, que alterna bandas horizontales marrón (opacas) y blancas (transparentes) de 20 centímetros de altura. La ventana está cerrada. Para que no pueda entrar "Él", entidad invisible pero omnipresente, de origen desconocido, que se apoderó del mundo, que todos saben que está ahí y que todos temen. ¡De dónde vinó! ¡Cómo vinó! ¿De Brasil? ¿En velero?</p>
-<p>Interesante como parece nuestro protagonista interesado en esa autora, Michèle Bernstein, involucrada en el tema de la deriva, cuya teoría planteó el situacionista Guy Debord en una publicación titulada <i>Teoría de la Deriva</i>, teoría de la que hablamos en la página <a class="whit" title="concepto - este link abre en una nueva tab" href="concepto.html" target="_blank">concepto</a> de este sitio.</p>
-<p>En cuanto al Nouveau Roman, es de especial interés para nosotros para el desarrollo de este sitio, por la forma en que rechaza las convenciones de la novela tradicional. Sin referencia a la psicología de los personajes, deconstrucción de la linealidad de la historia, paradojas ...</p>
+<p><span style="float: left; width: 0.7em; font-size: 400%; line-height: 80%;">E</span>ntramos en la intimidad del monopatinador.<p>
+<p><img style="float: left; margin-right: 5px;" alt="image" title="magdalena" src="madln.jpg">La tetera estaba sobre la mesa. Así como un plato con magdalenas, cada una envuelta en celofán sellado, proveniendo de la caja con la inscripción "Magdalenas de Commercy".<img style="float: right; margin-left: 5px;" alt="image" title="Vista de Delft" src="delft.jpg"><br>Pequeño pastelito, exquisito de sabor y de contorno, similar a un seno apenas núbil.</p>
+<p>Un buen olor a té caliente provenía de la tetera que estaba sobre la mesa; se esparcía en la habitación, luego atravesaba la abertura de la puerta, perduraba a lo largo del pequeño panel amarillo de la pared &ndash; donde estaba colgada una reproducción del famoso cuadro Vista de Delft &ndash; del pasillo y se extendía al resto del apartamento.</p>
+<p>Aquí estaba nuestro protagonista, cómodamente tendido frente al televisor, llevaba una camiseta con bandas horizontales de 10 centimetros de altura, alternando une blanca y una oscura (marrón), ojeando monumentos desconocidos de la literatura francesa: <img style="float: left; margin-top: 3px; margin-right: 5px;" alt="image" title="novela : Todos los Caballos del Rey" src="tcrmb.jpg"><i>Tous les Chevaux du Roi</i> (Todos los caballos del rey) y <i>La Nuit</i> (La Noche), de <a class="whit" title="Michèle Bernstein, en Wikipedia" href="https://es.wikipedia.org/wiki/Mich%C3%A8le_Bernstein" target="_blank">Michèle Bernstein</a>, una de las figuras y miembro fundadora de la extinta organización: Internacional Situacionista, cuyo líder era <a class="whit" title="Guy Debord, en Wikipedia" href="https://es.wikipedia.org/wiki/Guy_Debord" target="_blank">Guy Debord</a>, escritor y teórico francés (que reflexionó sobre la reificación).<img style="float: right; margin-top: 3px; margin-left: 5px;" alt="image" title="novela : La Nuit (La Noche)" src="lnmb.jpg"></p>
+<p>En la mesita de noche de madera, octagonal, de estilo oriental, que está representada en varias pinturas orientalistas del siglo XIX, se encontraba otra novela, Le Voyeur (El Mirón), de <a class="whit" title="Alain Robbe-Grillet, en Wikipedia" href="https://es.wikipedia.org/wiki/Alain_Robbe-Grillet" target="_blank">Alain Robbe-Grillet</a> <a id="vid1" class="footer" href="https://www.youtube.com/embed/UlhYNwQjfAs" target="framevideo">[ver vídeo 1]</a> <a class="digres" href="#voirvid">&#x21E9;</a>, escritor y cineasta francés, líder del Nouveau Roman (la "Nueva Novela").<img style="float: right; margin-top: 3px; margin-left: 5px;" alt="image" title="novela : Le Voyeur (El Mirón)" src="lvarg.jpg">Sobre esa misma mesita estaba un plato pequeño con dos mitades de melocotón una al lado de la otra, dos nalgitas de color amarillo anaranjado, redondas, carnosas, aterciopeladas, reminiscencia de la adolescente de la magdalena.</p>
+<p>La luz que entraba en la habitación era filtrada por una persiana enrollable, que alternaba bandas horizontales marrón (opacas) y blancas (transparentes) de 20 centímetros de altura. La ventana estaba cerrada. Para que no pudiera entrar "Él", entidad invisible pero omnipresente, de origen desconocido, que se apoderó del mundo, que todos sabian que estaba ahí y que todos temían. ¡De dónde vinó! ¡Cómo vinó! ¿De Brasil? ¿En velero?</p>
+<p>Interesante como parecia nuestro protagonista interesado en esa autora, Michèle Bernstein, involucrada en el tema de la deriva, cuya teoría planteó el situacionista Guy Debord en una publicación titulada <i>Teoría de la Deriva</i>, teoría de la que hablamos en la página <a class="whit" title="concepto - este link abre en una nueva tab" href="concepto.html" target="_blank">concepto</a> de este sitio.</p>
+<p>En cuanto al Nouveau Roman, es de especial interés para nosotros para el desarrollo de este sitio, por la forma en que rechaza las convenciones de la novela tradicional. No descripción de la psicología de los personajes, deconstrucción de la linealidad del tiempo, paradojas ...</p>
 <!-- MUSIC ANTIGRAV https://files.catbox.moe/9wm8da.mp3 -->
-<p>Seguro que nuestro protagonista, el monopatinador, nos depara algunas sorpresas; ¡nosotros también le deparamos algunas para él!</p><div style="float: right;"><audio controls="controls" preload="none">
-<source src="https://files.catbox.moe/9wm8da.mp3" type="audio/mpeg">
+<p>Seguro que nuestro protagonista, el monopatinador, nos deparaba algunas sorpresas; ¡nosotros también le deparábamos algunas para él!</p><div style="float: right;"><span style="font-size: x-small; color: white;">música antigravitacional</span><br><audio controls="controls" preload="none">
+<source src="gravitylaw.mp3" type="audio/mpeg">
 Your browser does not support the audio tag.
-</audio></div><p>Por cierto, ¿qué está escuchando en este momento en su reproductor de mp3, ¡mientras ve la televisión y lee un libro!? <img alt="image" src="equal.gif" width="39px" height="15px"></p>
-<p>¡Dios mio! Ya, es momento dejar sitio a la narrativa.</p>
+</audio></div><p>Por cierto, ¿qué estaba escuchando en este momento en su reproductor de mp3, ¡mientras miraba la televisión y leía un libro!? <img alt="image" src="equal.gif" width="39px" height="15px"></p>
+<p>¡Dios mio! Ya, era momento dejar sitio a la narrativa.</p>
 <!-- INTERVENCION DEL PROTAGONISTA -->
 <div class="dial"><p><span class="digres">El monopatinador</span> : ¡Por Favor! Quisiera intervenir como protagonista que soy: <img style="float: right;" alt="image" src="pipe.gif"></p><p>Me parece oportuno precisar que, según lo que he entendido, en este sitio, paseo, déambulación, etc... deben entenderse como deriva. O me equivoco ?</p>
 <p><span class="digres">El narrador</span> : tiene razón. Imagino que el guionista (el webmaster) consideró eso como adquirido de los lectores, pero si, habia que confirmarlo. Yo aprovecho la oportunidad para señalar un interesante enlace sobre la novela El Mirón, un aclarante análisis de esa novela precedido de una presentación de la "Nueva Novela" : <a title="Alain Robbe-Grillet y su Creciente Parodización del Género Policial" href="http://dx.doi.org/10.4067/S0718-22012017000200139" target="_blank">Alain Robbe-Grillet y su Creciente Parodización del Género Policial</a>.</p>
@@ -161,8 +199,8 @@ Your browser does not support the audio tag.
 <p><span class="digres">El monopatinador</span> : por cierto, las novelas Todos Los Caballos del Rey y El Mirón están disponibles (en español); personalmente las compré en Amazon.</p>
 <p><span class="digres">El narrador</span> : usted no compró nada. Es protagonista por voluntad del webmaster, una palabra en un texto.</p>
 <p><span class="digres">El monopatinador</span> : . . . . . . . . . .</p>
-<p><span class="digres">El narrador</span> : por curiosidad, ¿cual es esa música que esta escuchando?</p>
-<p><span class="digres">El monopatinador</span> : es música antigravitacional.</p>
+<p><span class="digres">El narrador</span> : por curiosidad, ¿cual es esa música que estaba escuchando?</p>
+<p><span class="digres">El monopatinador</span> : es música antigravitacional ; es música pop ; es música vaporwave.</p>
 <p><span class="digres">El narrador</span> : . . . . . . . . . .</p>
 <p><span class="digres">El monopatinador</span> : ¿No hay algo ardiendo? Aquí está lleno de humo.</p>
 <p><span class="digres">El narrador</span> : el webmaster dejó una pipa encendida en la pantalla.</p>
@@ -172,26 +210,63 @@ Your browser does not support the audio tag.
 <p><span class="digres">El narrador</span> : tiene razón, creo que los visitantes entenderán ese punto. ¡Adelante!</p>
 <p style="text-align: center;"><span class="digres">El monopatinador - el narrador</span> :<br><marquee direction="left" behavior="scroll" scrollamount="6" style="height:30px;width:400px;background-color:#ffffff;font-family:sans-serif;font-size:20pt;color:red;border-width:1px;border-style:solid;border-color:#000000; " > ¡Holà Webmaster! ¡Haga un backup del sitio!</marquee></p></div>
 <!-- FIN INTERVENCION DEL PROTAGONISTA -->
-<p><span style="float: left; width: 0.7em; font-size: 400%; line-height: 80%;">D</span>irigiéndose a la salida principal y única del edificio donde vive, el monopatinador pasa junto al celador que amablemente le comenta que le parece una ruina.</p>
+<p>¡Bueno Ya, si, es momento dejar sitio a la narrativa... narrativa... narrativa...</p>
+<!-- DEBUT TEXTE 2 -->
+<p><span style="float: left; width: 0.7em; font-size: 400%; line-height: 80%;">E</span>ntramos en la intimidad del monopatinador.<p>
+<p><img style="float: left; margin-right: 5px;" alt="image" title="magdalena" src="madln.jpg">La cafetera está sobre la mesa. Así como un plato con magdalenas, cada una envuelta en celofán sellado, proveniendo de la caja con la inscripción "Magdalenas de Commercy".<img style="float: right; margin-left: 5px;" alt="image" title="El Baño turco" src="bain.jpg"><br>Pequeño pastelito, exquisito de sabor y de contorno, similar a un seno apenas núbil.</p>
+<p>Un buen olor a café caliente proviene de la cafetera que está sobre la mesa; se esparce en la habitación, luego atraviesa la abertura de la puerta, perdura a lo largo del pequeño panel de azulejos azules de la pared &ndash; donde esta colgada una reproducción del cuadro El Baño turco &ndash; del pasillo y se extiende al resto del apartamento.</p>
+<p>Aquí está nuestro protagonista, cómodamente tendido frente al televisor, lleva una camiseta con bandas horizontales de 20 centimetros de altura, alternando une blanca y una oscura (marrón), ojeando monumentos de la literatura popular: <img style="float: left; margin-top: 3px; margin-right: 5px;" alt="image" title="fotonovela" src="rophot.jpg">una <i>Fotonovela</i> (de la revista italiana Grand Hôtel, si no me equivoco) y <i>SoHo</i> (Solo Hombres), una revista de entretenimiento colombiana dirigida al público masculino y reconocida por la publicación de fotografías eróticas femeninas. En 2020 Publicaciones Semana decidió dejar de circular la edición impresa de la revista y migró al formato digital.<img style="float: right; margin-top: 3px; margin-left: 5px;" alt="image" title="revista Soho" src="soho.jpg"></p>
+<p>En la mesita de noche de estilo contemporáneo, una especie de base baja, blanca, de sección cuadrada, otra revista, <i>Cromos</i>, un magacín al estilo europeo, con abundantes fotografías e ilustraciones, la cual está orientada principalmente a las notas políticas, económicas, culturales y sociales.<img style="float: right; margin-top: 3px; margin-left: 5px;" alt="image" title="revista Cromos" src="cromos.jpg"><br>Sobre esa misma mesita está un plato pequeño con dos mitades de melocotón una al lado de la otra, dos nalgitas de color amarillo anaranjado, redondas, carnosas, aterciopeladas, reminiscencia de la adolescente de la magdalena.</p>
+<p>La luz que entra en la habitación es filtrada por una persiana enrollable, que alterna bandas horizontales marrón (opacas) y blancas (transparentes) de 10 centímetros de altura. La ventana está cerrada. Para que no pueda entrar "Él", entidad invisible pero omnipresente, de origen desconocido, que se apoderó del mundo, que todos saben que está ahí y que todos temen. ¡De dónde vinó! ¡Cómo vinó! ¿De Brasil? ¿En velero?</p>
+<p>Interesante como parece nuestro protagonista interesado en los tabloides, revistas de entretenimiento y populares. Es de especial interés para nosotros para el desarrollo de este sitio, por la forma en que rechaza el rechazo a lo trivial que &ndash; ¿ no es cierto ? &ndash; constituye gran parte de lo cotidiano ; el texto, el lenguaje, moldeados como una escultura pueden superar esa trivialidad....</p>
+<!-- MUSIC POP https://files.catbox.moe/9wm8da.mp3 -->
+<p>Seguro que nuestro protagonista, el monopatinador, nos depara algunas sorpresas; ¡nosotros también le deparamos algunas para él!</p><div style="float: right;"><span style="font-size: x-small; color: white;">(música pop) Glimmer by <a class="whit" title="Glimmer by selfpity" href="https://selfpity.bandcamp.com" target="_blank">selfpity</a> licensed</span><br><audio controls="controls" preload="none">
+<source src="glimmer.mp3" type="audio/mpeg">
+Your browser does not support the audio tag.
+</audio><br><span style="font-size: x-small; color: white;">Attribution <a class="whit" title="Attribution 4.0 International License" href="https://creativecommons.org/licenses/by/4.0" target="_blank">4.0</a> International License.</span></div><p>Por cierto, ¿qué está escuchando en este momento en su reproductor de mp3, ¡mientras ve la televisión y lee una revista!? <img alt="image" src="equal.gif" width="39px" height="15px"></p>
+<p>¡Dios mio! Ya, es momento dejar sitio a la narrativa... narrativa...</p>
+<!-- FIN TEXTE 2 -->
+<!-- DEBUT TEXTE 3 -->
+<p><span style="float: left; width: 0.7em; font-size: 400%; line-height: 80%;">E</span>ntraremos en la intimidad del monopatinador.<p>
+<p><img style="float: left; margin-right: 5px;" alt="image" title="magdalena" src="madln.jpg">La cafetera estará sobre la mesa. Así como un plato con magdalenas, cada una envuelta en celofán sellado, proveniendo de la caja con la inscripción "Magdalenas de Commercy".<img style="float: right; margin-left: 5px;" alt="image" title="Buy Sexual" src="bsolson.jpg"><br>Pequeño pastelito, exquisito de sabor y de contorno, similar a un seno apenas núbil.</p>
+<p>Un buen olor a café caliente provendrá de la cafetera que estará sobre la mesa; se esparcirá en la habitación, luego atravesará la abertura de la puerta, perdurará a lo largo del panel blanco de la pared &ndash; donde estará colgada una reproducción del cuadro Buy Sexual &ndash; del pasillo y se extenderá al resto del apartamento.</p>
+<p>Aquí estará nuestro protagonista, cómodamente tendido frente al televisor, llevará una camiseta blanca, ojeando monumentos de las culturas dominantes (y al mismo tiempo subculturas) de entretenimiento : <a href="zine.html" onclick="NewWindow(this.href,'mywin','800','620','no','center');return false" onfocus="this.blur()"><img style="float: left; margin-top: 3px; margin-right: 5px;" alt="image" title="432hz ScootWave - Click para leer el zine" src="ezine.png"></a>un <a class="whit" title="artículo Zine en Wikipedia" href="https://es.wikipedia.org/wiki/Zine" target="_blank">Zine</a> (<i>432hz ScootWave</i>, un zine de una extraña subcultura vinculada al monopatín) y <i>Gamer</i>  revista española dedicaca en todo lo que ocurre en el sector de los videojuegos, por lo que también el lector dispone de secciones como juegos para móvil, reediciones, artículos de coleccionista, estilo de vida o accesorios como auriculares, etc..<img style="float: right; margin-top: 3px; margin-left: 5px;" alt="image" title="revista Electronic Gaming" src="gamer.jpg"></p>
+<p>En la mesita de noche de estilo contemporaneo, una especie de base baja, blanca, de sección cuadrada, estará otra revista, <i>Custom PC</i>, una revista informática con sede en el Reino Unido. Está dirigido a los entusiastas del hardware de PC y cubre temas como modding, overclocking y juegos de PC..<img style="float: right; margin-top: 3px; margin-left: 5px;" alt="image" title="revista Custom PC" src="cuspc.jpg"><br>Sobre esa misma mesita estará un plato pequeño con dos mitades de melocotón una al lado de la otra, dos nalgitas de color amarillo anaranjado, redondas, carnosas, aterciopeladas, reminiscencia de la adolescente de la magdalena.</p>
+<p>La luz que entrará en la habitación será filtrada por una persiana enrollable marrón. La ventana estará cerrada. Para que no pueda entrar "Él", entidad invisible pero omnipresente, de origen desconocido, que se apoderará del mundo, que todos sabrán que está ahí y que todos temerán. ¡De dónde habrá venido! ¡Cómo habrá venido! ¿De Brasil? ¿En velero?</p>
+<p>Interesante como parece nuestro protagonista interesado en la cultura de la computación y las subculturas... conectadas ; es de especial interés para nosotros para el desarrollo de este sitio, también conectado, computarizado, subcultura en sí.</p>
+<!-- MUSIC VAPORWAV https://files.catbox.moe/vuj7nw.mp3 -->
+<p>Seguro que nuestro protagonista, el monopatinador, nos deparará algunas sorpresas; ¡nosotros también le depararamos algunas para él!</p><div style="float: right;"><span style="font-size: x-small; color: white;">música vaporwave by <a class="whit" title="Glimmer by selfpity" href="https://soundcloud.com/giacomo424" target="_blank">Meavy Boy</a> licensed</span><br><audio controls="controls" preload="none">
+<source src="mbehh.mp3" type="audio/mpeg">
+Your browser does not support the audio tag.
+</audio><br><span style="font-size: x-small; color: white;">International License <a class="whit" title="Attribution 4.0 International License, Attribution-NonCommercial-NoDerivative" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">4.0</a> : A-NC-ND</span></div><p>Por cierto, ¿qué estará escuchando en este momento en su reproductor de mp3, ¡mientras verá la televisión y leerá una revista!? <img alt="image" src="equal.gif" width="39px" height="15px"></p>
+<p>¡Dios mio! ¡Ya, será momento dejar sitio a la narrativa!</p>
+<!-- FIN TEXTE 3 -->
+<p style="clear: both;"><span style="float: left; color: red; width: 0.7em; font-size: 400%; line-height: 80%;">L</span>os hechos occuren en un lugar llamado "La Ciudad" o "B". Se dice que "B" es la inicial del verdadero nombre de La Ciudad. La Ciudad está ubicada en una cordillera a una altura de más de 2600 metros. Beneficia de la tecnologia moderna pero, singularmente, como en el resto del país, los transportes quedaron estancados al estilo del principio del siglo XX : carros y buses ; no hay trenes (pero hay rastros de una red ferroviaria...), no hay transvias (pero hay rastros de una red de transvias...)(, no hay metro (pero hay... No, no hay). Por su ubicación, el idioma que se habla (el español), su vegetación, sus costumbres, se supone que La Ciudad se encuentra en Sur América<span style="color: red;">. . .</span></p>
+<!-- SON -->
+<div style="clear: both; text-align: center;"><span onclick="playSound(this, 'phone.mp3');"><img src="phone.jpg"></span></div>
+<!-- FIN SON -->
+<p style="clear: both;"><span onclick="playSound(this, 'villa.mp3');"><img style="float: left; margin-right: 5px;" src="villa.jpg"></span><span style="float: left; width: 0.7em; font-size: 400%; line-height: 80%;">D</span>irigiéndose a la salida principal y única del edificio donde vive, el monopatinador pasa junto al celador que amablemente le comenta que le parece una ruina.</p>
 <p>Le informa que le esta molestando un trastorno intestinal; el celador permanece en silencio. Ignorando ese trastorno suyo el monopatinador sale del edificio, seguro que sus vientos se los llevaría el viento y salta sobre su scooter.</p>
 <p>Unas palabras sobre su punto de partida, este edificio donde vive; como los edificios de alrededor, todo ,o por lo menos mucho, es de ladrillo, más o menos rojo; ladrillo, por todas partes, edificios, centros comerciales, aceras; gotea, fluye, es un revoloteo furioso; no sabemos qué hacer con él; unos bribones incluso lo lanzan a la policía, en ocasiones..</p>
 <p>¡Pero, vamos, basta de digresiones! ¡Adelante!</p>
 <p>Ni recorrió diez metros. Que mala racha.</p>
 <p><img style="float: right; margin-left: 3px; border-radius: 3px;" alt="image" src="bur.gif">Había descuidado a dos policías acostados quien estaban de guardia unos metros antes de la salida del parqueadero. Ya esta de pie, el scooter ileso y su piloto, un poco impactado. Se apresura hacia el portón corredizo que se esta cerrando y evita por poco ser aplastado contra el montante. En unos quince metros ha vivido más aventuras que un tabellón en quince años.</p>
-<p>Por la calle pasan motocicletas; de color verde claro; al igual que el casco y la chaqueta de los hombres (o mujeres) que las conducen. En la parte posterior de las chaquetas, una banda horizontal lleva la inscripción <span style="background: #00E600; font-family: arial; font-size: 0.90em; font-weight: 900; color: #707070;">POLICE</span> ; ¿quizás se trate de una Policía Ecológica o de una Policía Ecologista? ¡Qué insólito!</p>
+<p>Por la calle pasan motocicletas; de color verde claro; al igual que el casco y la chaqueta de los hombres (o mujeres) que las conducen. En la parte posterior de las chaquetas, una banda horizontal lleva la inscripción <span style="background: #00E600; font-family: arial; font-size: 0.90em; font-weight: 900; color: #707070;">POLICÍA</span> ; ¿quizás se trate de una Policía Ecológica o de una Policía Ecologista? ¡Qué insólito!</p>
+<p><span style="background: white; font-family: arial; font-size: 90%; color: black; font-weight: 900;">&nbsp; <mark>&#9888;</mark> UNA LENGUA QUIETA HACE UNA VIDA FELIZ <mark>&#9888;</mark> &nbsp;</span></p>
 <p>Ahora estamos en la acera, hecha de cemento roto por el desgaste del tiempo y las raíces de los árboles que la bordean y que proporcionan una agradable sombra contra el abrasador sol montañés ; una montaña en la que nunca se ve un copo de nieve; sólo el calor, agotador, quebradizo, sediento.</p>
 <p>¿Dónde se metio ese monopatinador flatulento?</p>
-<p>¡Ya lo vemos! Bajo un árbol, resguardado del sol, holgazaneando. Este árbol esta en el medio del andén, el cual, de hecho se divide en dos partes. Hay la parte en cemento, y la parte de cesped ; el limite no es de línea recta. A la derecha de ese árbol, a un angulo de 30 grados del otro lado de la carretera esta edificado un puesto de policia, con una terraza de cimiento, a un borde de la cual se ha construido una alcoba en la que esta empotrada una estatuilla de la Virgen Maria ; eso nos recuerda que el lema de la policia nacional es "Dios y Patria" <a id="fot4" class="footer" href="polnac.jpg" target="framefoto">[ver foto 4]</a>.</p>
+<p>¡Ya lo vemos! Bajo un árbol, resguardado del sol, holgazaneando. Este árbol esta en el medio del andén, el cual, de hecho se divide en dos partes. Hay la parte en cemento, y la parte de cesped ; el limite no es de línea recta. A la derecha, en diagonal a 30 grados del árbol, al otro lado de la carretera esta edificado un puesto de policia, con una terraza de cimiento, a un borde de la cual se ha construido una alcoba en la que esta empotrada una estatuilla de la Virgen Maria ; eso nos recuerda que el lema de la policía nacional es "Dios y Patria" <a id="fot4" class="footer" href="polnac.jpg" target="framefoto">[ver foto 4]</a> <a class="digres" href="#voirim">&#x21E9;</a>.</p>
+<p>Acceder a la página siguiente requiere responder a la pregunta abajo. ¡Suerte!</p>
 <!-- FIN ESSAI -->
 </div>
 <p>&nbsp;</p>
-<p style="text-align: center;"><span class="clrbis">Volver a la lectura</span><sup>&#60;<a style="font-weight: 900;" href="#fot1">foto1</a>&#62;</sup><sup>&#60;<a style="font-weight: 900;" href="#fot2">foto2</a>&#62;</sup><sup>&#60;<a style="font-weight: 900;" href="#fot3">foto3</a>&#62;</sup><sup>&#60;<a style="font-weight: 900;" href="#fot4">foto4</a>&#62;</sup><br><img alt="image" src="peli.gif"><br><b>Visor de fotos</b></p><iframe name="framefoto" width="1028" height="771" style="border: solid black 1px; overflow: auto;" src="cadre2.gif"></iframe>
+<p style="text-align: center;"><span class="clrbis" id="voirim">Volver a la lectura</span><sup>&#60;<a style="font-weight: 900;" href="#fot1">foto1</a>&#62;</sup><sup>&#60;<a style="font-weight: 900;" href="#fot2">foto2</a>&#62;</sup><sup>&#60;<a style="font-weight: 900;" href="#fot3">foto3</a>&#62;</sup><sup>&#60;<a style="font-weight: 900;" href="#fot4">foto4</a>&#62;</sup><br><img alt="image" src="peli.gif"><br><b>Visor de fotos</b></p><iframe name="framefoto" width="1028" height="771" style="border: solid black 1px; overflow: auto;" src="cadre2.gif"></iframe>
 <p>&nbsp;</p>
-<p style="text-align: center;"><span class="clrbis">Volver a la lectura</span><sup>&#60;<a style="font-weight: 900;" href="#vid1">vid 1</a>&#62;</sup><br><img alt="image" src="m2.gif"><br><b>Visor de vídeos</b></p><iframe name="framevideo" width="640" height="480" style="border: solid black 1px; overflow: auto;" scrolling="auto" src="video.gif"></iframe>
+<p style="text-align: center;"><span class="clrbis" id="voirvid">Volver a la lectura</span><sup>&#60;<a style="font-weight: 900;" href="#vid1">vid 1</a>&#62;</sup><br><img alt="image" src="m2.gif"><br><b>Visor de vídeos</b></p><iframe name="framevideo" width="640" height="480" style="border: solid black 1px; overflow: auto;" scrolling="auto" src="video.gif"></iframe>
 <p>&nbsp;</p>
 <p style="text-align: center;"><img alt="image" src="doigt.jpg"></p>
 <p style="text-align: center;"><b>Para pasar a la página siguiente</b>, responda a la pregunta (Haga clic en la pregunta para poder responder) : :</p><p><a href="#" onClick="md5_login();return false;">¿Amplio sitio web británico destinado especialmente a los desarrolladores de videojuegos?</a> (nueve letras; utilice sólo minúsculas)</p>
-<div style="text-align: left;"><p style="font-weight: 900;">Si no sabe la respuesta, consulte los siguientes enlaces (<i>tenga paciencia, a veces se puede necesitar unos segundos para que se muestre el contenido</i>)  :</p>
+<div style="text-align: left;"><p style="font-weight: 900;">Si no sabe la respuesta, consulte los siguientes enlaces (<i><span style="color: red;">tenga paciencia</span>, a veces se puede necesitar unos segundos para que se muestre el contenido</i>)  :</p>
 <ul>
 <li><a title="Pista 2" href="https://en.wikipedia.org/wiki/Game" rel="ajaxpanel">Pista 1</a></li>
 <li><a title="Pista 1" href="https://en.wiktionary.org/wiki/Kama_Sutra" rel="ajaxpanel">Pista 2</a></li>
